@@ -13,6 +13,7 @@
 		49827B2E2B26E2A000232B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49827B2C2B26E2A000232B9F /* Main.storyboard */; };
 		49827B302B26E2A100232B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49827B2F2B26E2A100232B9F /* Assets.xcassets */; };
 		49827B332B26E2A100232B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49827B312B26E2A100232B9F /* LaunchScreen.storyboard */; };
+		49DAF32D2B274DC700292A90 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAF32C2B274DC700292A90 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		49827B2F2B26E2A100232B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49827B322B26E2A100232B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49827B342B26E2A100232B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DAF32C2B274DC700292A90 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				49827B262B26E2A000232B9F /* AppDelegate.swift */,
 				49827B282B26E2A000232B9F /* SceneDelegate.swift */,
 				496787032B26E80E00F68B61 /* EmloyeeListViewController.swift */,
+				49DAF32C2B274DC700292A90 /* DetailViewController.swift */,
 				49827B2C2B26E2A000232B9F /* Main.storyboard */,
 				49827B2F2B26E2A100232B9F /* Assets.xcassets */,
 				49827B312B26E2A100232B9F /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				49827B272B26E2A000232B9F /* AppDelegate.swift in Sources */,
 				496787042B26E80E00F68B61 /* EmloyeeListViewController.swift in Sources */,
+				49DAF32D2B274DC700292A90 /* DetailViewController.swift in Sources */,
 				49827B292B26E2A000232B9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="XMb-x5-9av" kind="show" id="1QD-gK-P73"/>
+                                    <segue destination="XMb-x5-9av" kind="show" id="owV-Ah-5Bg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -40,11 +40,11 @@
             </objects>
             <point key="canvasLocation" x="563" y="-24"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="T47-Dd-hiX">
             <objects>
-                <viewController id="XMb-x5-9av" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kUn-PR-j3b" customClass="UITableViewCellContentView">
+                <viewController id="XMb-x5-9av" customClass="DetailViewController" customModule="HW6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kUn-PR-j3b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -71,10 +71,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-gI-PWg">
+                                <rect key="frame" x="119" y="164" width="64.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xux-yT-1VW">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQL-Wu-niJ">
+                                        <rect key="frame" x="0.0" y="57" width="64.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f3Q-Zo-DxK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fZy-gI-PWg" firstAttribute="leading" secondItem="gCo-xN-m2e" secondAttribute="trailing" constant="17" id="6sN-5p-3am"/>
+                            <constraint firstItem="fZy-gI-PWg" firstAttribute="top" secondItem="FEI-Ow-LVS" secondAttribute="bottom" constant="27.5" id="E6R-YF-mKH"/>
                             <constraint firstItem="gCo-xN-m2e" firstAttribute="top" secondItem="f3Q-Zo-DxK" secondAttribute="top" constant="100" id="Rgr-ld-Etl"/>
                             <constraint firstItem="FEI-Ow-LVS" firstAttribute="centerX" secondItem="kUn-PR-j3b" secondAttribute="centerX" id="jMo-7c-W9U"/>
                             <constraint firstItem="gCo-xN-m2e" firstAttribute="leading" secondItem="f3Q-Zo-DxK" secondAttribute="leading" constant="20" id="lcy-6P-Iqe"/>
@@ -82,6 +101,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XZh-Yz-9LE"/>
+                    <connections>
+                        <outlet property="EmailAdress" destination="xux-yT-1VW" id="7NM-Qh-ivU"/>
+                        <outlet property="NameAndSurname" destination="FEI-Ow-LVS" id="dSn-z2-Tuw"/>
+                        <outlet property="PhoneNumber" destination="YQL-Wu-niJ" id="NyR-il-Uwn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGO-al-eI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
