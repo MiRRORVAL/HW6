@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496787042B26E80E00F68B61 /* EmloyeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496787032B26E80E00F68B61 /* EmloyeeListViewController.swift */; };
 		49827B272B26E2A000232B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49827B262B26E2A000232B9F /* AppDelegate.swift */; };
 		49827B292B26E2A000232B9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49827B282B26E2A000232B9F /* SceneDelegate.swift */; };
-		49827B2B2B26E2A000232B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49827B2A2B26E2A000232B9F /* ViewController.swift */; };
 		49827B2E2B26E2A000232B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49827B2C2B26E2A000232B9F /* Main.storyboard */; };
 		49827B302B26E2A100232B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49827B2F2B26E2A100232B9F /* Assets.xcassets */; };
 		49827B332B26E2A100232B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49827B312B26E2A100232B9F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		496787032B26E80E00F68B61 /* EmloyeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmloyeeListViewController.swift; sourceTree = "<group>"; };
 		49827B232B26E2A000232B9F /* HW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49827B262B26E2A000232B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49827B282B26E2A000232B9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49827B2A2B26E2A000232B9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49827B2D2B26E2A000232B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49827B2F2B26E2A100232B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49827B322B26E2A100232B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				49827B262B26E2A000232B9F /* AppDelegate.swift */,
 				49827B282B26E2A000232B9F /* SceneDelegate.swift */,
-				49827B2A2B26E2A000232B9F /* ViewController.swift */,
+				496787032B26E80E00F68B61 /* EmloyeeListViewController.swift */,
 				49827B2C2B26E2A000232B9F /* Main.storyboard */,
 				49827B2F2B26E2A100232B9F /* Assets.xcassets */,
 				49827B312B26E2A100232B9F /* LaunchScreen.storyboard */,
@@ -138,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49827B2B2B26E2A000232B9F /* ViewController.swift in Sources */,
 				49827B272B26E2A000232B9F /* AppDelegate.swift in Sources */,
+				496787042B26E80E00F68B61 /* EmloyeeListViewController.swift in Sources */,
 				49827B292B26E2A000232B9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,12 +303,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.HW6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,12 +333,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.HW6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
